@@ -1,0 +1,96 @@
+#contacto {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contacto-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.cont {
+    justify-content: center;
+}
+
+form {
+    width: 90%;
+    min-height: 50vh;
+    margin: 10px 0;
+    padding: 15px;
+    background: rgba(26, 113, 8, 0.5);
+    box-sizing: border-box;
+    border-radius: 12px;
+} 
+
+form p {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+#boton {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgb(26, 113, 8);
+    text-align: center;
+    border-radius: 15px;
+}
+
+#boton:hover {
+    color: rgb(219, 214, 214);
+    cursor: pointer;
+}
+
+.cont p {
+    padding-bottom: 15px;
+}
+
+.icono-cont {
+    width: 25px;
+    margin-right: 5px;
+}
+
+#mapa {
+    width: 90%;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+@media (max-width: 992px){
+    .contacto-cont {
+        gap: 20px;
+    }
+
+    form {
+        width: 100%;
+        min-height: 50vh;
+        margin: 10px 0;
+        padding: 15px;
+        background: rgba(26, 113, 8, 0.5);
+        box-sizing: border-box;
+        border-radius: 12px;
+    } 
+
+    #mapa {
+        width: 100%;
+        min-height: 35vh;
+    }
+}
+
+@media (max-width: 576px){
+    .contacto-cont {
+        grid-template-columns: 1fr;
+    }
+}
