@@ -44,6 +44,37 @@
     font-size: 14px;
 }
 
+.api-cont {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.api-titulo{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#raza {
+    color: rgb(26, 113, 8);
+    font-style: italic;
+    font-weight:bolder;
+}
+
+#razaimg {
+    height: 30vh;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+}
+
+#razaimg:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 @media (max-width: 992px){
 
     .galeria-cont {
@@ -68,5 +99,9 @@
 
     .texto-img h1{
         font-size: 16px;
+    }
+
+    .api-cont {
+        grid-template-columns: 1fr;
     }
 }
